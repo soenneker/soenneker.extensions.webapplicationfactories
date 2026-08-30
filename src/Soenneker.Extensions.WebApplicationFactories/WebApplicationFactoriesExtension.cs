@@ -64,10 +64,10 @@ namespace Soenneker.Extensions.WebApplicationFactories
             var headers = client.DefaultRequestHeaders;
 
             if (userId.HasContent())
-                headers.TryAddWithoutValidation(AuthorizationUserIdHeader, userId);
+                headers.Add(AuthorizationUserIdHeader, userId);
 
             if (email.HasContent())
-                headers.TryAddWithoutValidation(AuthorizationEmailHeader, email);
+                headers.Add(AuthorizationEmailHeader, email);
 
             if (userRoles is { Count: > 0 })
             {
@@ -76,7 +76,7 @@ namespace Soenneker.Extensions.WebApplicationFactories
                     : string.Join(',', userRoles);
 
                 if (roles.HasContent())
-                    headers.TryAddWithoutValidation(AuthorizationRolesHeader, roles);
+                    headers.Add(AuthorizationRolesHeader, roles);
             }
 
             return client;
