@@ -46,9 +46,9 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="10.0.12" />
-        <PackageReference Include="Soenneker.Enums.DeployEnvironment" Version="4.0.247" />
+        <PackageReference Include="Soenneker.Enums.DeployEnvironment" Version="4.0.248" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Soenneker.Extensions.String" Version="4.0.776" />
+        <PackageReference Include="Soenneker.Extensions.String" Version="4.0.777" />
     </ItemGroup>
 </Project>
